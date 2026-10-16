@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Astral End: a field guide</title>
+<meta name="description" content="A field guide to The Astral End, a Minecraft mod for the outer End: every biome and structure cut out of the world, every creature, and the web of life between them.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Astral End">
+<meta property="og:description" content="A field guide to The Astral End, a Minecraft mod for the outer End: every biome and structure cut out of the world, every creature, and the web of life between them.">
+<meta property="og:url" content="https://ggrantrichards.github.io/the-astral-end/">
+<meta property="og:image" content="https://ggrantrichards.github.io/the-astral-end/img/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c0a14">
+<link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: an enchanting table's book. Everything is written in the table's runes and reads itself out
+   as you reach it. A hero of the Leviathan in cut-out, then the web of life as a star chart, then plates
+   for the biomes, creatures and structures (each a cut-out or a model, with the in-game picture a tap
+   away), and the Starforge last. One look only: the End at night. */
+@font-face { font-family: "Galactic"; src: url(data:font/ttf;base64,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jGTIZGRk/gxkZGRkZGRkZGQBkGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZAAACQAoAAACHAH0AAMABwALAA8AEwAXABsAHwAjAAATNTMVMTUzFTE1MxUxNTMVMTUzFQc1MxUHNTMVBzUzFQU1MxUoZGRkZGRkZGRkZGT+1GQBkGRkZGRkZGRkZGRkZGRkZGRkZGRkZGQAAAkAKADIAhwB9AADAAcACwAPABMAFwAbAB8AIwAAEzUzFTE1MxUzNTMVMTUzFQU1MxUxNTMVMTUzFTE1MxUxNTMVKGRkZGRk/gxkZGRkZAGQZGRkZGRkZGTIZGRkZGRkZGRkZAAMACgAAAIcAfQAAwAHAAsADwATABcAGwAfACMAJwArAC8AABM1MxUHNTMVBTUzFTE1MxUxNTMVMTUzFTE1MxUFNTMVMTUzFTE1MxUxNTMVMTUzFfBkZGT+1GRkZGRk/gxkZGRkZAGQZGRkZGRkZGRkZGRkZGRkZMhkZGRkZGRkZGRkAAADACgAZAIcAZAAAwAHAAsAABM1MxUFNTMVITUzFfBk/tRkASxkASxkZMhkZGRkAAAGACgAAAIcAfQAAwAHAAsADwATABcAAAE1MxUHNTMVBTUzFTE1MxUHNTMVBzUzFQG4ZMhk/tRkZMhkyGQBkGRkZGRkZGRkZGRkZGRkZGQAAAoAjAAAAbgB9AADAAcACwAPABMAFwAbAB8AIwAnAAATNTMVMzUzFQU1MxUzNTMVBTUzFTM1MxUFNTMVMzUzFQU1MxUzNTMVjGRkZP7UZGRk/tRkZGT+1GRkZP7UZGRkAZBkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGQADQAoAAACHAH0AAMABwALAA8AEwAXABsAHwAjACcAKwAvADMAABM1MxUxNTMVMTUzFTE1MxUxNTMVBTUzFSE1MxUFNTMVITUzFQU1MxUhNTMVBTUzFSE1MxUoZGRkZGT+DGQBLGT+DGQBLGT+DGQBLGT+DGQBLGQBkGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZAAAAAQANgABAAAAAAABAAgAAAABAAAAAAACAAcACAADAAEECQABABAADwADAAEECQACAA4AH0dhbGFjdGljUmVndWxhcgBHAGEAbABhAGMAdABpAGMAUgBlAGcAdQBsAGEAcgAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAwECAQMBBAEFAQYBBwEIAQkBCgELAQwBDQEOAQ8BEAERARIBEwEUARUBFgEXARgBGQEaARsFc2dhX2EFc2dhX2IFc2dhX2MFc2dhX2QFc2dhX2UFc2dhX2YFc2dhX2cFc2dhX2gFc2dhX2kFc2dhX2oFc2dhX2sFc2dhX2wFc2dhX20Fc2dhX24Fc2dhX28Fc2dhX3AFc2dhX3EFc2dhX3IFc2dhX3MFc2dhX3QFc2dhX3UFc2dhX3YFc2dhX3cFc2dhX3gFc2dhX3kFc2dhX3oAAA==) format("truetype"); font-display: block; }
+:root {
+  color-scheme: dark;
+  --void: #0c0a14;          /* the End's sky; also every cut-out's background */
+  --island: #15111d;        /* plates */
+  --rim: #2c2538;           /* borders */
+  --ink: #ece6f4;
+  --dim: #a59bb5;
+  --star: #f3d98a;          /* accent: the Gilded Reach's gold */
+  --rune: #b9a7ff;          /* the enchanting table's violet, for text not yet read */
+  --hunts: #ff7a59;
+  --avoids: #f2c14e;
+  --symbiosis: #4fd6c2;
+  --play: #ff8fd0;
+  --kin: #b48cff;
+  --senses: #7fb2ff;
+  --display: "Pixelify Sans", "Courier New", monospace;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --glyph: "Galactic", "Courier New", monospace;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--void); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 64px;
+}
+a { color: var(--star); }
+.wrap { max-width: 1240px; margin: 0 auto; display: grid; gap: 56px; }
+
+/* runes: text not yet read is drawn in the table's alphabet */
+.g { font-family: var(--glyph); color: var(--rune); font-weight: 400; letter-spacing: 0.02em; text-transform: lowercase; }
+.g.hot { text-shadow: 0 0 8px rgba(185, 167, 255, 0.7); }
+
+/* hero */
+.hero { display: grid; gap: 18px; position: relative; }
+.hero .top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 16px; align-items: center; }
+.eyebrow { font: 700 12px var(--body); letter-spacing: 0.16em; text-transform: uppercase; color: var(--star); }
+.hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(44px, 9vw, 104px); line-height: 0.95; margin: 0; text-wrap: balance; }
+.hero h1 .g { font-size: 0.8em; letter-spacing: 0.06em; }
+.hero .intro { color: var(--dim); max-width: 64ch; margin: 0; font-size: 16px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { font: 700 14px var(--body); color: var(--void); background: var(--star); border: 1px solid var(--star); border-radius: 8px; padding: 9px 16px; text-decoration: none; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--rim); }
+.btn:focus-visible, .chip:focus-visible, .seg button:focus-visible, .tally a:focus-visible { outline: 2px solid var(--star); outline-offset: 2px; }
+.stage { position: relative; border-radius: 16px; overflow: hidden; border: 1px solid var(--rim);
+  background: radial-gradient(ellipse at 50% 55%, #1b1430 0%, var(--void) 70%); }
+.stage img { display: block; width: 100%; height: auto; max-height: 72vh; object-fit: contain; }
+.stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.stage .cap { position: absolute; left: 14px; bottom: 12px; font: 700 11px var(--body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); }
+.tally { display: flex; flex-wrap: wrap; gap: 8px; }
+.tally a { text-decoration: none; color: var(--ink); background: var(--island); border: 1px solid var(--rim); border-radius: 999px; padding: 6px 14px; font-weight: 700; font-size: 14px; }
+.tally a b { color: var(--star); font-family: var(--display); font-size: 16px; margin-right: 5px; }
+
+section { display: grid; gap: 16px; scroll-margin-top: 16px; }
+section > h2 { font-family: var(--display); font-size: clamp(28px, 4.4vw, 42px); margin: 0; line-height: 1.05; text-wrap: balance; }
+section > p.lede { color: var(--dim); margin: -6px 0 0; max-width: 70ch; }
+
+/* the web */
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.chip { font: 600 13px var(--body); color: var(--ink); background: var(--island); border: 1px solid var(--rim); border-radius: 999px;
+  padding: 6px 12px 6px 10px; display: inline-flex; gap: 8px; align-items: center; cursor: pointer; }
+.chip i { width: 18px; height: 3px; border-radius: 2px; background: var(--c); display: inline-block; }
+.chip[aria-pressed="false"] { opacity: 0.38; }
+.webgrid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; }
+.chart { background: radial-gradient(ellipse at 50% 40%, #1a1428 0%, var(--void) 70%); border: 1px solid var(--rim); border-radius: 14px; overflow-x: auto; }
+.chart svg { display: block; width: 100%; min-width: 760px; height: auto; }
+.panel { background: var(--island); border: 1px solid var(--rim); border-radius: 14px; padding: 18px; display: grid; gap: 12px; min-width: 0; }
+.panel .who { display: flex; gap: 12px; align-items: center; }
+.panel img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; image-rendering: pixelated; border: 2px solid var(--rim); flex: none; }
+.panel h3 { font-family: var(--display); font-size: 22px; margin: 0; line-height: 1.1; }
+.panel .home { color: var(--dim); font-size: 13px; }
+.panel h4 { font: 700 11px var(--body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); margin: 6px 0 0; }
+.panel ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.panel li { border-left: 3px solid var(--c); padding-left: 10px; font-size: 14px; }
+.panel li b { display: block; }
+.hint { color: var(--dim); font-size: 14px; margin: 0; }
+svg text { font-family: var(--body); }
+svg text.sealed { font-family: var(--glyph); fill: var(--rune); text-transform: lowercase; }
+.node { cursor: pointer; }
+.node:focus { outline: none; }
+.node circle.ring { fill: var(--void); stroke: var(--rim); stroke-width: 3; }
+.node.on circle.ring, .node:focus-visible circle.ring { stroke: var(--star); }
+.node .label { fill: var(--ink); font-size: 13px; font-weight: 700; text-anchor: middle; }
+.node .sub { fill: var(--dim); font-size: 10px; text-anchor: middle; letter-spacing: 0.08em; }
+.edge { fill: none; stroke-width: 2.6; transition: opacity .2s; }
+.dim .edge:not(.lit) { opacity: 0.08; }
+.dim .node:not(.lit) { opacity: 0.35; }
+.edge.off { display: none; }
+.region { stroke-width: 1.2; stroke-dasharray: 2 5; }
+.region-label { font-family: var(--display); font-size: 15px; letter-spacing: 0.06em; }
+.stormwrap { border-radius: 14px; overflow: hidden; border: 1px solid var(--rim); background: linear-gradient(rgba(12,10,20,0.35), rgba(12,10,20,0.85)), var(--bg) center 30% / cover; padding: 18px; display: grid; gap: 12px; }
+.stormwrap h3 { font-family: var(--display); font-size: 22px; margin: 0; }
+.stormwrap p { margin: 0; color: var(--ink); max-width: 64ch; font-size: 14px; }
+.storm { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.react { display: flex; gap: 10px; align-items: center; min-width: 0; background: var(--island); border: 1px solid var(--rim); border-radius: 12px; padding: 10px 12px; backdrop-filter: blur(2px); }
+.react img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; image-rendering: pixelated; flex: none; }
+.react span { font-size: 14px; }
+
+/* plates */
+.plates { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.plate { background: var(--island); border: 1px solid var(--rim); border-radius: 14px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; min-width: 0; }
+.view { position: relative; aspect-ratio: 4 / 3; max-width: 100%; background: radial-gradient(ellipse at 50% 60%, color-mix(in srgb, var(--c, var(--kin)) 16%, var(--void)) 0%, var(--void) 72%); }
+.view img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: contain; padding: 10px; transition: opacity .35s; }
+.view img.shot { object-fit: cover; padding: 0; }
+.view img.model { padding: 26px; }
+.view img[aria-hidden="true"] { opacity: 0; visibility: hidden; }
+.badge { position: absolute; left: 10px; top: 10px; z-index: 1; font: 700 10px var(--body); letter-spacing: 0.1em; text-transform: uppercase;
+  background: rgba(12, 10, 20, 0.82); color: var(--c, var(--star)); border: 1px solid currentColor; border-radius: 4px; padding: 2px 7px; }
+.seg { position: absolute; right: 10px; bottom: 10px; z-index: 1; display: flex; background: rgba(12, 10, 20, 0.86); border: 1px solid var(--rim); border-radius: 8px; padding: 2px; }
+.seg button { font: 700 12px var(--body); color: var(--dim); background: transparent; border: 0; border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--rim); color: var(--ink); }
+.plate .body { padding: 14px 16px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.plate h3 { font-family: var(--display); font-size: 23px; margin: 0; line-height: 1.1; }
+.plate .where { color: var(--star); font-size: 13px; font-weight: 700; }
+.plate p { margin: 0; color: var(--dim); font-size: 14px; }
+.facts { display: flex; flex-wrap: wrap; gap: 6px; }
+.facts span { font-size: 12px; border: 1px solid var(--rim); border-radius: 999px; padding: 2px 9px; color: var(--ink); }
+.swatches { display: flex; gap: 4px; }
+.swatches i { width: 18px; height: 10px; border-radius: 2px; display: inline-block; border: 1px solid rgba(255,255,255,0.12); }
+
+/* the Leviathan, a plate across the whole row */
+.feature { grid-column: 1 / -1; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); grid-template-rows: none; }
+.feature .view { aspect-ratio: 16 / 10; }
+.extras { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
+.extras figure { margin: 0; display: grid; gap: 3px; min-width: 0; }
+.extras img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; display: block; }
+.extras figcaption { font-size: 11px; color: var(--dim); }
+
+/* the Starforge */
+.forge { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: step; }
+.steps li { counter-increment: step; background: var(--island); border: 1px solid var(--rim); border-radius: 12px; padding: 12px 14px 12px 52px; position: relative; font-size: 14px; color: var(--dim); }
+.steps li::before { content: counter(step); position: absolute; left: 14px; top: 10px; font: 700 22px var(--display); color: var(--star); }
+.steps li b { color: var(--ink); display: block; font-size: 15px; }
+.shots2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.shots2 img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 10px; border: 1px solid var(--rim); display: block; }
+.tablewrap { overflow-x: auto; border: 1px solid var(--rim); border-radius: 14px; background: var(--island); }
+table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: 14px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--rim); vertical-align: top; }
+th { font: 700 11px var(--body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--dim); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-family: var(--display); font-size: 17px; white-space: nowrap; }
+td:first-child i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--c); margin-right: 8px; vertical-align: 1px; }
+td { color: var(--dim); }
+td b { color: var(--ink); font-weight: 700; }
+
+.notes { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.note { background: var(--island); border: 1px solid var(--rim); border-radius: 12px; padding: 14px 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.note h3 { font-family: var(--display); font-size: 19px; margin: 0; line-height: 1.15; }
+.note p { margin: 0; color: var(--dim); font-size: 14px; }
+footer { color: var(--dim); font-size: 13px; border-top: 1px solid var(--rim); padding-top: 16px; display: grid; gap: 6px; }
+footer p { margin: 0; }
+@media (max-width: 900px) {
+  .webgrid, .forge { grid-template-columns: minmax(0, 1fr); }
+  .feature { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="top">
+      <div class="eyebrow" data-r>A Minecraft mod · 26.3 · Forge</div>
+      <div class="actions">
+        <a class="btn" href="https://modrinth.com/mod/the-astral-end" target="_blank" rel="noopener" data-r>Get it on Modrinth</a>
+        <button class="btn ghost" type="button" id="readall">Read it all</button>
+      </div>
+    </div>
+    <h1 data-r>The Astral End</h1>
+    <p class="intro" data-r>The outer End, filled in. Five biomes and three hidden places, eight creatures that live
+      with each other, a 200-block Leviathan skeleton with a Curator inside, and a forge for the gear you
+      bring back. Every cut-out on this page is built from a real world the mod generates in its test runs.</p>
+    <div class="stage" id="stage">
+      <img src="img/diorama_leviathan.webp" alt="A cut-out of a Leviathan: a 200-block skeleton floating in the void, built over with End City towers">
+      <canvas id="glyphs" aria-hidden="true"></canvas>
+      <div class="cap" data-r>A Leviathan, cut out of the world</div>
+    </div>
+    <nav class="tally" aria-label="Sections">
+      <a href="#web"><b>17</b><span data-r>threads in the web</span></a>
+      <a href="#biomes"><b>8</b><span data-r>biomes and places</span></a>
+      <a href="#creatures"><b>10</b><span data-r>creatures</span></a>
+      <a href="#structures"><b>4</b><span data-r>structures</span></a>
+      <a href="#starforge"><b>5</b><span data-r>upgrades</span></a>
+    </nav>
+  </header>
+
+  <section id="web">
+    <h2 data-r>The web of life</h2>
+    <p class="lede" data-r>Who hunts whom, who hides from whom, who helps and who plays. Every thread here is in
+      the game and checked by the mod's test runs. Pick a creature to follow its threads.</p>
+    <div class="controls" id="controls"></div>
+    <div class="webgrid">
+      <div class="chart"><svg id="chart" viewBox="0 0 1100 700" role="img" aria-label="Map of the relationships between the End's creatures"></svg></div>
+      <aside class="panel" id="panel" aria-live="polite"></aside>
+    </div>
+    <div class="stormwrap" id="stormwrap">
+      <h3 data-r>When a Sunstorm comes</h3>
+      <p data-r>The Gilded Reach's star flares, the sky turns gold and the light burns. Everything alive takes cover.</p>
+      <div class="storm" id="storm"></div>
+    </div>
+  </section>
+
+  <section id="biomes">
+    <h2 data-r>Biomes</h2>
+    <p class="lede" data-r>A 64-block piece of each, cut out of the world. The Gilded Reach is rare; the Shattered
+      Crags are a variant of the Glimmering Crags; the Hollow Roots and the Crystal Vaults are caves, cut open
+      so you can look in.</p>
+    <div class="plates" id="biome-plates"></div>
+  </section>
+
+  <section id="creatures">
+    <h2 data-r>Creatures</h2>
+    <p class="lede" data-r>Eight creatures, the Hollowback (a Hushback the Leviathan's builders hollowed out),
+      and the Curator, the mini-boss. Each model is drawn from the mod's own model and texture.</p>
+    <div class="plates" id="mob-plates"></div>
+  </section>
+
+  <section id="structures">
+    <h2 data-r>Structures</h2>
+    <p class="lede" data-r>The Leviathan is the heart of it: its skull, its reliquary, the Curator, and the
+      Constellation Maze on its last tower. The rest are landmarks with something to find.</p>
+    <div class="plates" id="structure-plates"></div>
+  </section>
+
+  <section id="starforge">
+    <h2 data-r>The Starforge</h2>
+    <p class="lede" data-r>The late game. Five upgrades, one per item, none simply better than another: the choice
+      is which goes where. Each shows on the tooltip like an enchantment, leaves a colour accent on the item, and
+      stacks with enchantments.</p>
+    <div class="forge">
+      <ol class="steps">
+        <li><b data-r>Defeat the Curator</b><span data-r>Starforge Templates drop only from it, two a kill: one to use, one to copy.</span></li>
+        <li><b data-r>Sight the constellation</b><span data-r>Each upgrade answers to a constellation. Find it through a spyglass from the Gilded Reach.</span></li>
+        <li><b data-r>Build an Astral Forge</b><span data-r>A Meteoric Iron block, five Observatory Quartz and a Void Crystal.</span></li>
+        <li><b data-r>Forge</b><span data-r>Template, item, Starforge Alloy and the upgrade's material. Diamond and netherite gear, bows, crossbows, tridents and maces.</span></li>
+      </ol>
+      <div class="shots2">
+        <img src="img/starforge_astral_forge.jpg" alt="The Astral Forge, in the game" loading="lazy">
+        <img src="img/starforge_forge_screen.jpg" alt="The Astral Forge's screen" loading="lazy">
+        <img src="img/starforge_armor.jpg" alt="Starforged armour, worn" loading="lazy">
+        <img src="img/starforge_rift_walker.jpg" alt="Rift Walker boots making tiles of rift over the void" loading="lazy">
+      </div>
+    </div>
+    <div class="tablewrap">
+      <table id="upgrades">
+        <thead><tr><th data-r>Upgrade</th><th data-r>Goes on</th><th data-r>What it does</th><th data-r>Material</th><th data-r>Constellation</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="notes">
+    <h2 data-r>Field notes</h2>
+    <p class="lede" data-r>Things worth knowing before you go out.</p>
+    <div class="notes" id="notes-list"></div>
+  </section>
+
+  <footer>
+    <p data-r>The Astral End for Minecraft 26.3 on Forge 66, on the client and the server. MIT licensed.</p>
+    <p><span data-r>Cut-outs and models are drawn by the mod's tools from its test worlds; the other pictures are screenshots taken in a real game.</span>
+      <a href="https://modrinth.com/mod/the-astral-end" target="_blank" rel="noopener">modrinth.com/mod/the-astral-end</a></p>
+  </footer>
+</div>
+
+<script>
+const IMG = {"ashen_barrens": "img/ashen_barrens.jpg", "biome_crystal_vaults": "img/biome_crystal_vaults.jpg", "biome_hollow_roots": "img/biome_hollow_roots.jpg", "deep_hollows": "img/deep_hollows.jpg", "diorama_biome_ashen_barrens": "img/diorama_biome_ashen_barrens.webp", "diorama_biome_deep_hollows": "img/diorama_biome_deep_hollows.webp", "diorama_biome_gilded_reach": "img/diorama_biome_gilded_reach.webp", "diorama_biome_glimmering_crags": "img/diorama_biome_glimmering_crags.webp", "diorama_biome_nebula_fields": "img/diorama_biome_nebula_fields.webp", "diorama_biome_shattered_crags": "img/diorama_biome_shattered_crags.webp", "diorama_cave_crystal_vaults": "img/diorama_cave_crystal_vaults.webp", "diorama_comet_crater": "img/diorama_comet_crater.webp", "diorama_leviathan": "img/diorama_leviathan.webp", "diorama_shattered_observatory": "img/diorama_shattered_observatory.webp", "diorama_solar_array": "img/diorama_solar_array.webp", "gilded_reach_aerial": "img/gilded_reach_aerial.jpg", "glimmering_crags": "img/glimmering_crags.jpg", "mob_curator_exposed": "img/mob_curator_exposed.jpg", "mob_drift_whale_side": "img/mob_drift_whale_side.jpg", "mob_hollowback": "img/mob_hollowback.jpg", "mob_hushback": "img/mob_hushback.jpg", "mob_hydragrip_angled": "img/mob_hydragrip_angled.jpg", "mob_mirror_wretch_angled": "img/mob_mirror_wretch_angled.jpg", "mob_pollinator": "img/mob_pollinator.jpg", "mob_shardback_angled": "img/mob_shardback_angled.jpg", "mob_umbral_stalker_lit": "img/mob_umbral_stalker_lit.jpg", "mob_watcher": "img/mob_watcher.jpg", "nebula_fields_aerial": "img/nebula_fields_aerial.jpg", "shattered_crags": "img/shattered_crags.jpg", "sky_eclipse_flare": "img/sky_eclipse_flare.jpg", "starforge_armor": "img/starforge_armor.jpg", "starforge_astral_forge": "img/starforge_astral_forge.jpg", "starforge_forge_screen": "img/starforge_forge_screen.jpg", "starforge_rift_walker": "img/starforge_rift_walker.jpg", "structure_comet_crater_hot": "img/structure_comet_crater_hot.jpg", "structure_leviathan": "img/structure_leviathan.jpg", "structure_leviathan_heart": "img/structure_leviathan_heart.jpg", "structure_leviathan_maze": "img/structure_leviathan_maze.jpg", "structure_leviathan_reliquary": "img/structure_leviathan_reliquary.jpg", "structure_leviathan_skull": "img/structure_leviathan_skull.jpg", "structure_shattered_observatory": "img/structure_shattered_observatory.jpg", "structure_solar_array": "img/structure_solar_array.jpg", "model_curator": "img/model_curator.webp", "fm_curator": "img/fm_curator.webp", "model_drift_whale": "img/model_drift_whale.webp", "fm_drift_whale": "img/fm_drift_whale.webp", "model_hollowback": "img/model_hollowback.webp", "fm_hollowback": "img/fm_hollowback.webp", "model_hushback": "img/model_hushback.webp", "fm_hushback": "img/fm_hushback.webp", "model_hydragrip": "img/model_hydragrip.webp", "fm_hydragrip": "img/fm_hydragrip.webp", "model_mirror_wretch": "img/model_mirror_wretch.webp", "fm_mirror_wretch": "img/fm_mirror_wretch.webp", "model_pollinator": "img/model_pollinator.webp", "fm_pollinator": "img/fm_pollinator.webp", "model_shardback": "img/model_shardback.webp", "fm_shardback": "img/fm_shardback.webp", "model_umbral_stalker": "img/model_umbral_stalker.webp", "fm_umbral_stalker": "img/fm_umbral_stalker.webp", "model_watcher": "img/model_watcher.webp", "fm_watcher": "img/fm_watcher.webp", "f_hushback": "img/fm_hushback.webp", "f_hydragrip": "img/fm_hydragrip.webp", "f_whale": "img/fm_drift_whale.webp", "f_wretch": "img/fm_mirror_wretch.webp", "f_watcher": "img/fm_watcher.webp", "f_hollowback": "img/fm_hollowback.webp", "f_curator": "img/fm_curator.webp", "f_pollinator": "img/fm_pollinator.webp", "f_shardback": "img/fm_shardback.webp", "f_stalker": "img/fm_umbral_stalker.webp", "f_endermite": "img/f_endermite.webp", "f_axolotl": "img/f_axolotl.webp", "f_enderman": "img/f_enderman.webp", "f_shulker": "img/f_shulker.webp", "f_wolf": "img/f_wolf.webp"};
+const TYPES = {
+  hunts:     { name: "Hunts",           c: "var(--hunts)" },
+  avoids:    { name: "Fears / avoids",  c: "var(--avoids)" },
+  symbiosis: { name: "Helps / rides",   c: "var(--symbiosis)" },
+  play:      { name: "Plays",           c: "var(--play)" },
+  kin:       { name: "Kin / guards",    c: "var(--kin)" },
+  senses:    { name: "Senses / mimics", c: "var(--senses)" },
+};
+const REGIONS = [
+  { name: "THE GILDED REACH", x: 230, y: 185, rx: 205, ry: 150, c: "#f3d98a" },
+  { name: "ASHEN BARRENS", x: 590, y: 430, rx: 250, ry: 200, c: "#bdb6c4" },
+  { name: "NEBULA FIELDS", x: 905, y: 165, rx: 175, ry: 125, c: "#ff8fb8" },
+  { name: "DEEP HOLLOWS & CRAGS", x: 935, y: 505, rx: 170, ry: 165, c: "#b48cff" },
+];
+// The web: the eight creatures, the Hollowback and the Curator, and the vanilla mobs they meet.
+const MOBS = {
+  hushback:  { n: "Hushback", face: "f_hushback", x: 150, y: 150, home: "The Gilded Reach",
+    self: ["The herd blinks away together when one is hurt.", "One stands lookout, head up; at trouble it chimes twice and the herd shies off. Sneak up, or bring Breathcomb."] },
+  hydragrip: { n: "Hydragrip", face: "f_hydragrip", x: 320, y: 115, home: "The Gilded Reach",
+    self: ["The young play tag round the ponds."] },
+  endermite: { n: "Endermite", face: "f_endermite", x: 330, y: 265, home: "Vanilla", vanilla: true, self: [] },
+  axolotl:   { n: "Axolotl", face: "f_axolotl", x: 120, y: 285, home: "Vanilla, if you bring one", vanilla: true, self: [] },
+  whale:     { n: "Drift Whale", face: "f_whale", x: 590, y: 115, home: "The open void, in pods",
+    self: ["Pods follow a leader, hum and answer, roll, breach and chase in spirals.",
+           "The pod swims as one flock, each turning as the leader turned, a beat late.",
+           "A straying calf is called and nudged back by its mother.",
+           "The pod sleeps hanging nose-up in the void, slowly turning.",
+           "Passing a Leviathan, the pod circles it once, humming its lowest."] },
+  wretch:    { n: "Mirror Wretch", face: "f_wretch", x: 470, y: 400, home: "Ashen Barrens",
+    self: ["Throws familiar sounds from the island's edge to lure you over."] },
+  enderman:  { n: "Enderman", face: "f_enderman", x: 655, y: 345, home: "Vanilla", vanilla: true,
+    self: ["Won't stay in the Gilded Reach.", "In the Ashen Barrens, stands at the edges facing the void."] },
+  watcher:   { n: "Watcher", face: "f_watcher", x: 770, y: 440, home: "Ashen Barrens", self: ["Leads players toward the nearest Leviathan."] },
+  hollowback:{ n: "Hollowback", face: "f_hollowback", x: 470, y: 565, home: "Inside a Leviathan", self: ["Looks like the herd until it's on you; then its head splits open on its fangs."] },
+  curator:   { n: "Curator", face: "f_curator", x: 605, y: 605, home: "Inside a Leviathan", self: ["At half health it turns the reliquary over: the fight goes on upside down."] },
+  shulker:   { n: "Shulker", face: "f_shulker", x: 740, y: 580, home: "Vanilla, on the Leviathan's towers", vanilla: true, self: [] },
+  pollinator:{ n: "Pollinator", face: "f_pollinator", x: 850, y: 130, home: "Nebula Fields", self: ["Pollinates glowing plants, which spread."] },
+  shardback: { n: "Shardback", face: "f_shardback", x: 1010, y: 420, home: "Crystal Vaults",
+    self: ["Waits folded down in its geode, one more crystal cluster, until you come close."] },
+  stalker:   { n: "Umbral Stalker", face: "f_stalker", x: 890, y: 510, home: "Crags' root caves, Deep Hollows", self: ["Snuffs out lights; fears fire."] },
+  wolf:      { n: "Wolf", face: "f_wolf", x: 1020, y: 615, home: "Vanilla, if you bring one", vanilla: true, self: [] },
+};
+// [from, to, type, what, why it matters]
+const EDGES = [
+  ["hydragrip", "endermite", "hunts", "Hunts endermites", "Each one it eats, it coughs up an Ender Pearl."],
+  ["endermite", "hushback", "hunts", "Pesters the herds", "In the Gilded Reach endermites creep after the Hushbacks, and the herd hops and shifts."],
+  ["hydragrip", "hushback", "symbiosis", "Cleans the herd, rides along", "An endermite near the herd is the first it goes for; then it lounges on a resting Hushback's back."],
+  ["hydragrip", "axolotl", "play", "Plays tag with axolotls", "Bring one to a pond: one chases, touch, and the other is it."],
+  ["hollowback", "hushback", "kin", "Remembers its kin", "Hold Breathcomb or Hushfleece and a Hollowback falters, head low, and chimes once like the herd."],
+  ["enderman", "wretch", "senses", "Listens to the Wretch", "At the Ashen Barrens' edges, Endermen turn to face a nearby Wretch."],
+  ["wretch", "endermite", "hunts", "Eats endermites", "They live in the Ashen Barrens now too."],
+  ["wretch", "whale", "senses", "Mimics whale hums", "The pod answers, then falls silent and steers away. Silent whales mean a Wretch is near."],
+  ["enderman", "watcher", "avoids", "Won't meet the Watcher's eye", "An Enderman near it turns its back and walks off."],
+  ["pollinator", "whale", "symbiosis", "Drifts in the pods' wake", "Pollinators rise behind a passing pod's tails, glowing, then sink back to their plants."],
+  ["whale", "pollinator", "play", "Calves chase Pollinators", "Round and round one, never touching, till the calf's mother comes and nudges it home."],
+  ["stalker", "enderman", "hunts", "Hunts Endermen", "When no player is about: short fights in the dark, the Endermen often blinking away."],
+  ["stalker", "pollinator", "avoids", "Avoids glowing swarms", "Light in any form keeps it back."],
+  ["stalker", "shardback", "avoids", "Keeps clear of a woken Shardback", "Two hunters, one dark: it backs off from one that has unfolded."],
+  ["wolf", "stalker", "senses", "Gives the Stalker away", "Bring a wolf: it stares and growls where the Stalker hides, and the Stalker shows itself."],
+  ["shardback", "enderman", "hunts", "Ambushes Endermen", "An Enderman that blinks into a vault and wanders within six blocks gets the same welcome you would."],
+  ["curator", "shulker", "kin", "Shares the Leviathan", "Shulkers keep the towers; the Curator keeps the reliquary."],
+];
+const STORM = [
+  ["f_hushback", "Hushbacks crowd under the giant Lumineshrooms"],
+  ["f_hydragrip", "Hydragrips slip into the ponds"],
+  ["f_whale", "Drift Whale pods swim out of the Reach till it's past"],
+];
+const BIOMES = [
+  { n: "The Gilded Reach", kind: "Rare biome", cut: "diorama_biome_gilded_reach", img: "gilded_reach_aerial", c: "#f3d98a", sw: ["#c9aa48", "#34c8bc", "#5a8a3a", "#e8913a", "#c49cff"],
+    d: "One great disc of golden meadow: gold turf and grass, teal water in the Wellspring and its ponds, rocky knolls, giant Lumineshrooms, and a faint gold and teal aurora low round its sky. Its star brings the Sunstorms; take cover under a cap.",
+    life: "Hushbacks, Hydragrips", built: "The Solar Array" },
+  { n: "Nebula Fields", kind: "Biome", cut: "diorama_biome_nebula_fields", img: "nebula_fields_aerial", c: "#ff8fb8", sw: ["#c0506e", "#8a2c6a", "#b0d8ff", "#3a1230"],
+    d: "An emission nebula on the ground: rose moss, magenta reed groves with cold-blue tips, Drift Bladders tethered over the moss, and glowing gas clouds overhead. Low gravity.",
+    life: "Pollinators", built: "Shattered Observatory" },
+  { n: "Ashen Barrens", kind: "Biome", cut: "diorama_biome_ashen_barrens", img: "ashen_barrens", c: "#bdb6c4", sw: ["#e6e0d2", "#a8a296", "#635f58", "#e0820f"],
+    d: "The Leviathans' graveyard: pale stone shelves under falling ash, ribcages and bone spires, withered giant stalks, and Solarite glowing at the bottom of scorch fissures ringed with Sunscorched Stone.",
+    life: "Mirror Wretch, Watcher, Drift Whales, Endermen at the edges", built: "The Leviathan, Comet Craters" },
+  { n: "Deep Hollows", kind: "Biome", cut: "diorama_biome_deep_hollows", img: "deep_hollows", c: "#b48cff", sw: ["#241a3c", "#6a54b0", "#160f2a", "#c49cff"],
+    d: "A dark forest of fireproof Nullwood on ring islands, Hollow Vines hanging to the ground, Null Lanterns in pools of light, Mimic Plants, and Upwells that turn gravity over.",
+    life: "Umbral Stalker", built: "" },
+  { n: "Glimmering Crags", kind: "Biome", cut: "diorama_biome_glimmering_crags", img: "glimmering_crags", c: "#d8d0ff", sw: ["#2c3448", "#e0d0ff", "#7c7290", "#160f2a"],
+    d: "Peaks of dark Nightstone grown through with cold white-lavender Glimmer Crystal, and root caves inside the bigger islands where Void Crystal grows.",
+    life: "Umbral Stalker (in the caves)", built: "" },
+  { n: "Shattered Crags", kind: "Variant", cut: "diorama_biome_shattered_crags", img: "shattered_crags", c: "#7fb2ff", sw: ["#283044", "#e0d0ff", "#7fb2ff"],
+    d: "The Crags split into floating shards, starlight falling between them and on into the void.",
+    life: "", built: "" },
+  { n: "Hollow Roots", kind: "Cave", cut: null, img: "biome_hollow_roots", c: "#b48cff", sw: ["#2a1c3a", "#c49cff", "#f3d98a"],
+    d: "The caves under the Deep Hollows: Nullwood roots, glowcaps and Starsap, lit by drifting motes.",
+    life: "", built: "" },
+  { n: "Crystal Vaults", kind: "Cave", cut: "diorama_cave_crystal_vaults", img: "biome_crystal_vaults", c: "#7fb2ff", sw: ["#2e2a44", "#e0d0ff", "#7a44e0"],
+    d: "Under the Shattered Crags, great geodes of Glimmer Crystal drift in the void, each split open somewhere.",
+    life: "Shardback", built: "" },
+];
+const CREATURES = [
+  { n: "Drift Whale", model: "model_drift_whale", img: "mob_drift_whale_side", role: "Passive", c: "#4fd6c2", where: "The open void, in pods",
+    d: "A huge translucent whale, last small descendant of the Leviathans. Pods hum to each other and play; sing to one (Memory Moss, a note block, Chorus Fruit) and it's yours to ride.",
+    facts: ["Rideable", "Whalelight Scales"] },
+  { n: "Pollinator", model: "model_pollinator", img: "mob_pollinator", role: "Passive", c: "#4fd6c2", where: "Nebula Fields",
+    d: "A small jellyfish of glowing gas that drifts between glowing plants and spreads them. Now and then it leaves Glowing Spores behind; there's no reason to kill it.",
+    facts: ["Glowing Spores", "Spreads plants"] },
+  { n: "Hushback", model: "model_hushback", img: "mob_hushback", role: "Passive", c: "#4fd6c2", where: "The Gilded Reach",
+    d: "A herd grazer so pale its bones show through. Hurt one and the whole herd blinks away. Shear it for Hushfleece, which makes Sunshades.",
+    facts: ["Hushfleece", "Hushback Flank", "Breathcomb breeds"] },
+  { n: "Hydragrip", model: "model_hydragrip", img: "mob_hydragrip_angled", role: "Neutral", c: "#f2c14e", where: "The Gilded Reach's ponds",
+    d: "A dark newt lit with cyan spots. Its broods grow up in the water; adults hunt endermites on the banks and cough up an Ender Pearl for each one.",
+    facts: ["Ender Pearls", "Chorus Fruit tempts"] },
+  { n: "Mirror Wretch", model: "model_mirror_wretch", img: "mob_mirror_wretch_angled", role: "Hostile", c: "#ff7a59", where: "Ashen Barrens",
+    d: "A faceless grey worm with a round mouth of teeth and a vocal sac for every voice it has stolen. It throws sounds you know from the island's edge, and lunges when you're there.",
+    facts: ["Memory Moss calms it", "Drops Memory Moss"] },
+  { n: "Umbral Stalker", model: "model_umbral_stalker", img: "mob_umbral_stalker_lit", role: "Hostile", c: "#ff7a59", where: "Crags' root caves, Deep Hollows",
+    d: "A hunched brute, invisible in the dark until it hunts. It creeps up from behind, snuffs out your lights, and fears fire.",
+    facts: ["Its membrane brews Invisibility", "Afraid of fire"] },
+  { n: "Watcher", model: "model_watcher", img: "mob_watcher", role: "Neutral", c: "#f2c14e", where: "Ashen Barrens, Shattered Observatory",
+    d: "A floating stone sentinel with one great eye, seen only at the edge of sight. Look straight at it and it vanishes, turning up further on, on the way to the nearest Leviathan.",
+    facts: ["Leads to the Leviathan", "Can't be harmed"] },
+  { n: "Shardback", model: "model_shardback", img: "mob_shardback_angled", role: "Hostile", c: "#ff7a59", where: "Crystal Vaults",
+    d: "A low, heavy hunter whose back is grown over with Glimmer Crystal. It waits folded down in a geode, one more cluster among the rest, and unfolds and leaps when you come within a few steps.",
+    facts: ["Void Crystal", "Glimmer Clusters"] },
+  { n: "Hollowback", model: "model_hollowback", img: "mob_hollowback", role: "Variant", c: "#b48cff", where: "The Leviathan's lower ribs",
+    d: "A Hushback the builders kept and hollowed out. It looks like one of the herd, calm and slow, with grey fleece and duller eyes, until it's on you: then its head splits open into a jaw full of fangs, a violet glow down its throat, and every bite snaps it shut.",
+    facts: ["Hostile", "Opens up when it's close", "Falters at Breathcomb"] },
+  { n: "The Curator", model: "model_curator", img: "mob_curator_exposed", role: "Mini-boss", c: "#f3d98a", where: "The Leviathan's reliquary",
+    d: "A hulking war-construct with its core in a glass case. It telegraphs a cannon beam and a shoulder charge; at half health the case shatters and the whole fight turns upside down. Its Starforge Templates are the only ones in the End.",
+    facts: ["300 health", "Starforge Templates", "Curator's Core"] },
+];
+const STRUCTURES = [
+  { n: "The Leviathan", feature: true, cut: "diorama_leviathan", img: "structure_leviathan_skull", where: "Ashen Barrens and the outer End", c: "#c49cff",
+    extra: [["structure_leviathan", "From afar"], ["structure_leviathan_reliquary", "The reliquary"], ["structure_leviathan_heart", "The heart"], ["structure_leviathan_maze", "The Constellation Maze"]],
+    d: "A 200-block skeleton floating in the void, built over by the End's builders: a skull you can enter (the Maw, a wormhole), a reliquary in its ribcage where the Curator waits, a beating heart, towers with loot and shulkers, and a Constellation Maze on its last tower." },
+  { n: "Solar Array", cut: "diorama_solar_array", img: "structure_solar_array", where: "The Gilded Reach", c: "#f3d98a",
+    d: "Cracked Solarite mirrors on a low terrace round a reflecting pool, over a chamber where a Bottled Flare still sits in its pedestal. The mirrors still focus the Sunstorms on its field." },
+  { n: "Shattered Observatory", cut: "diorama_shattered_observatory", img: "structure_shattered_observatory", where: "Nebula Fields, End Highlands", c: "#ff8fb8",
+    d: "The Cartographers' domed hall in a great ring of quartz pillars, most of them fallen, grown over with Starblooms. A Watcher keeps to its ruins." },
+  { n: "Comet Crater", cut: "diorama_comet_crater", img: "structure_comet_crater_hot", where: "Ashen Barrens", c: "#e0820f",
+    d: "A bowl blasted into an island, ringed with charred stone, a Comet Core of Meteoric Iron at the bottom and a cache under it. Some are still hot." },
+];
+const UPGRADES = [
+  ["Void Recall", "#a98cff", "Chestplate", "Right-click a <b>Rift Pearl</b> onto it. Fall into the void and the pearl is spent to put you back on your last footing.", "Curator's Core (the Curator)", "Leviathan"],
+  ["Rift Walker", "#7ad8ff", "Boots", "Walk off an edge and tiles of rift form under your feet and a step ahead, cracking and crumbling a moment later.", "Whalelight Scale (a tamed Drift Whale sheds them)", "Whale"],
+  ["Lensing", "#ee62d4", "Helmet, leggings", "A chance per piece that a projectile bends around you.", "Cracked Lens (the builders' chests)", "Watcher"],
+  ["Radiant", "#fff07a", "Armour, weapons", "Armour: <b>Soak Light</b>, a golden heart now and then in bright light. Weapons: whatever you hit <b>glows</b>.", "Bottled Flare (the Solar Array's pedestal)", "Dead Star"],
+  ["Echo Strike", "#eea650", "Melee weapons", "Part of every melee hit lands again a moment later, with a chime.", "Rift Pearl (bosses and the best chests)", "Maw"],
+];
+const NOTES = [
+  ["Sunstorms", "In the Gilded Reach the star flares and the light burns. Get under a Lumineshroom, wear a Sunshade (Hushfleece), or drink Sun Ward (Sunscale Lichen)."],
+  ["Upwells", "In the Deep Hollows an Upwell turns gravity over: you fall up onto the underside of the island. A Potion of Upwelling does it anywhere."],
+  ["Riding a whale", "Eat Memory Moss and play a note block near a Drift Whale, then feed it Chorus Fruit. Only its owner can ride it."],
+  ["The Lodestar", "The End's own respawn point. Use one in the End, and if you die there you wake beside it."],
+  ["Memory Moss", "Grows in the Ashen Barrens and replays pale afterimages of what passed over it. Eating it lets you remember."],
+  ["Star Charts", "Pieced together from Chart Fragments in the builders' chests; each marks a far-off region or a site."],
+  ["The Maw", "The Leviathan's skull is a wormhole. Walk into its mouth and it carries you across the End."],
+  ["Brewing", "An Umbral Membrane brews an Awkward Potion straight into Invisibility."],
+];
+
+/* ---------- runes ---------- */
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ABC = "abcdefghijklmnopqrstuvwxyz";
+const sealed = new Set();
+function seal(el) {
+  if (el._parts) return;
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) if (walker.currentNode.nodeValue.trim()) nodes.push(walker.currentNode);
+  el._parts = nodes.map(n => {
+    const plain = document.createTextNode(""), rune = document.createElement("span");
+    rune.className = "g"; rune.textContent = n.nodeValue;
+    const box = document.createElement("span"); box.append(plain, rune);
+    n.replaceWith(box);
+    return { text: n.nodeValue, plain, rune };
+  });
+  sealed.add(el);
+}
+function reveal(el, fast) {
+  if (!el._parts || el._done) return;
+  el._done = true; sealed.delete(el);
+  const parts = el._parts, total = parts.reduce((s, p) => s + p.text.length, 0);
+  const finish = () => parts.forEach(p => { p.plain.nodeValue = p.text; p.rune.remove(); });
+  if (reduce || fast === "now") { finish(); return; }
+  const dur = Math.min(fast ? 500 : 1300, 260 + total * (fast ? 4 : 9));
+  const t0 = performance.now();
+  (function step(t) {
+    const k = Math.floor(Math.min(1, (t - t0) / dur) * total);
+    let left = k;
+    for (const p of parts) {
+      const n = Math.max(0, Math.min(p.text.length, left));
+      left -= p.text.length;
+      p.plain.nodeValue = p.text.slice(0, n);
+      // a few letters past the edge flicker in other runes, as if still being read
+      const rest = p.text.slice(n);
+      const flick = n < p.text.length && n > 0 ? rest.slice(0, 3).replace(/[a-z]/gi, () => ABC[Math.random() * 26 | 0]) + rest.slice(3) : rest;
+      p.rune.textContent = flick;
+      p.rune.classList.toggle("hot", n > 0 && n < p.text.length);
+    }
+    if (k < total) requestAnimationFrame(step); else finish();
+  })(t0);
+}
+const io = "IntersectionObserver" in window ? new IntersectionObserver(entries => {
+  let i = 0;
+  for (const e of entries) if (e.isIntersecting) { io.unobserve(e.target); const el = e.target; setTimeout(() => reveal(el), (i++) * 90); }
+}, { rootMargin: "0px 0px -8% 0px", threshold: 0.15 }) : null;
+function sealAll(root) {
+  root.querySelectorAll("[data-r]").forEach(el => { if (!el._parts) { seal(el); io ? io.observe(el) : reveal(el, "now"); } });
+}
+document.getElementById("readall").addEventListener("click", () => {
+  [...sealed].forEach(el => { io && io.unobserve(el); reveal(el, "now"); });
+  document.querySelectorAll("svg text.sealed").forEach(t => t.classList.remove("sealed"));
+});
+
+/* ---------- the web ---------- */
+const svgNS = "http://www.w3.org/2000/svg";
+const svg = document.getElementById("chart");
+const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(svgNS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+const on = { types: new Set(Object.keys(TYPES)) };
+let selected = null;
+const css = getComputedStyle(document.documentElement);
+const defs = el("defs", {}, svg);
+for (const t in TYPES) {
+  const m = el("marker", { id: "a-" + t, viewBox: "0 0 10 10", refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: "auto-start-reverse" }, defs);
+  el("path", { d: "M0,0 L10,5 L0,10 z", fill: css.getPropertyValue("--" + t).trim() }, m);
+}
+el("clipPath", { id: "face", clipPathUnits: "objectBoundingBox" }, defs).appendChild(el("circle", { cx: 0.5, cy: 0.5, r: 0.5 }));
+for (let i = 0; i < 140; i++) {
+  const r = Math.abs((Math.sin(i * 12.9898) * 43758.5453) % 1), q = Math.abs((Math.sin(i * 78.233) * 12543.31) % 1);
+  el("circle", { cx: r * 1100, cy: q * 700, r: (i % 7 === 0 ? 1.4 : 0.8), fill: "#ece6f4", opacity: 0.25 + (i % 5) * 0.08 }, svg);
+}
+const svgTexts = [];
+for (const g of REGIONS) {
+  el("ellipse", { class: "region", cx: g.x, cy: g.y, rx: g.rx, ry: g.ry, fill: g.c, "fill-opacity": 0.05, stroke: g.c, "stroke-opacity": 0.45 }, svg);
+  const t = el("text", { class: "region-label sealed", x: g.x, y: g.y - g.ry + 22, fill: g.c, "fill-opacity": 0.85, "text-anchor": "middle" }, svg);
+  t.textContent = g.name; svgTexts.push(t);
+}
+const R = 34;
+const edgeLayer = el("g", {}, svg);
+const edgeEls = EDGES.map((e, i) => {
+  const a = MOBS[e[0]], b = MOBS[e[1]];
+  const dx = b.x - a.x, dy = b.y - a.y, len = Math.hypot(dx, dy), ux = dx / len, uy = dy / len;
+  const x1 = a.x + ux * (R + 4), y1 = a.y + uy * (R + 4), x2 = b.x - ux * (R + 10), y2 = b.y - uy * (R + 10);
+  const bend = (i % 2 ? 1 : -1) * Math.min(60, len * 0.18);
+  const mx = (x1 + x2) / 2 - uy * bend, my = (y1 + y2) / 2 + ux * bend;
+  const p = el("path", { class: "edge", d: `M${x1},${y1} Q${mx},${my} ${x2},${y2}`, style: `stroke:${TYPES[e[2]].c}`, "marker-end": `url(#a-${e[2]})` }, edgeLayer);
+  el("title", {}, p).textContent = `${a.n} → ${b.n}: ${e[3]}`;
+  return p;
+});
+const nodeEls = {};
+for (const id in MOBS) {
+  const m = MOBS[id];
+  const g = el("g", { class: "node", tabindex: 0, role: "button", "aria-label": m.n, transform: `translate(${m.x},${m.y})` }, svg);
+  el("circle", { class: "ring", r: R + 3 }, g);
+  el("image", { href: IMG[m.face], x: -R, y: -R, width: R * 2, height: R * 2, "clip-path": "url(#face)", preserveAspectRatio: "xMidYMid slice", style: "image-rendering:pixelated" }, g);
+  const t = el("text", { class: "label sealed", y: R + 18 }, g); t.textContent = m.n; svgTexts.push(t);
+  if (m.vanilla) { el("text", { class: "sub", y: R + 31 }, g).textContent = "VANILLA"; }
+  g.addEventListener("click", () => select(selected === id ? null : id));
+  g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); select(selected === id ? null : id); } });
+  nodeEls[id] = g;
+}
+// the chart's names read themselves out when the chart comes into view
+const chartIO = "IntersectionObserver" in window ? new IntersectionObserver(es => {
+  if (es.some(e => e.isIntersecting)) { chartIO.disconnect(); svgTexts.forEach((t, i) => setTimeout(() => t.classList.remove("sealed"), reduce ? 0 : 120 + i * 45)); }
+}, { threshold: 0.25 }) : null;
+chartIO ? chartIO.observe(svg) : svgTexts.forEach(t => t.classList.remove("sealed"));
+
+const visible = e => on.types.has(e[2]);
+let firstPanel = true;
+function render() {
+  EDGES.forEach((e, i) => {
+    edgeEls[i].classList.toggle("off", !visible(e));
+    edgeEls[i].classList.toggle("lit", !!selected && (e[0] === selected || e[1] === selected));
+  });
+  svg.classList.toggle("dim", !!selected);
+  for (const id in nodeEls) {
+    const lit = !selected || id === selected || EDGES.some(e => visible(e) && ((e[0] === selected && e[1] === id) || (e[1] === selected && e[0] === id)));
+    nodeEls[id].classList.toggle("lit", lit);
+    nodeEls[id].classList.toggle("on", id === selected);
+  }
+  const panel = document.getElementById("panel");
+  if (!selected) {
+    panel.innerHTML = `<h3 data-r>${EDGES.length} threads</h3>
+      <p class="hint" data-r>Each is a behaviour the mod's test runs make happen and check.</p>
+      <p class="hint" data-r>Pick a creature to see who it hunts, fears, helps and plays with, and what it does with its own kind.</p>`;
+  } else {
+    const m = MOBS[selected];
+    const li = EDGES.filter(e => visible(e) && (e[0] === selected || e[1] === selected)).map(e => {
+      const out = e[0] === selected, other = MOBS[out ? e[1] : e[0]].n;
+      const head = out ? `${e[3]} <span style="color:var(--dim);font-weight:400">(${other})</span>` : `${MOBS[e[0]].n}: ${e[3].charAt(0).toLowerCase() + e[3].slice(1)}`;
+      return `<li style="--c:${TYPES[e[2]].c}" data-r><b>${head}</b>${e[4]}</li>`;
+    }).join("");
+    const self = m.self.map(t => `<li style="--c:var(--star)" data-r>${t}</li>`).join("");
+    panel.innerHTML = `<div class="who"><img src="${IMG[m.face]}" alt=""><div><h3 data-r>${m.n}</h3><div class="home" data-r>${m.home}</div></div></div>
+      ${li ? `<h4 data-r>With others</h4><ul>${li}</ul>` : `<p class="hint" data-r>No threads shown with the current filters.</p>`}
+      ${self ? `<h4 data-r>With its own kind</h4><ul>${self}</ul>` : ""}`;
+  }
+  // a creature's page is read out the moment it opens; the first, when the panel comes into view
+  if (firstPanel) { firstPanel = false; sealAll(panel); }
+  else panel.querySelectorAll("[data-r]").forEach(x => { seal(x); reveal(x, true); });
+}
+function select(id) { selected = id; render(); }
+const controls = document.getElementById("controls");
+for (const t in TYPES) {
+  const b = document.createElement("button");
+  b.className = "chip"; b.type = "button"; b.setAttribute("aria-pressed", "true");
+  b.innerHTML = `<i style="--c:${TYPES[t].c}"></i><span data-r>${TYPES[t].name}</span>`;
+  b.addEventListener("click", () => { on.types.has(t) ? on.types.delete(t) : on.types.add(t); b.setAttribute("aria-pressed", on.types.has(t)); render(); });
+  controls.appendChild(b);
+}
+document.getElementById("stormwrap").style.setProperty("--bg", `url(${IMG.sky_eclipse_flare})`);
+document.getElementById("storm").innerHTML = STORM.map(([f, t]) => `<div class="react"><img src="${IMG[f]}" alt=""><span data-r>${t}</span></div>`).join("");
+render();
+
+/* ---------- plates ---------- */
+const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+let viewId = 0;
+// a plate's picture: the cut-out (or model) first, the in-game picture a tap away
+function view(first, firstLabel, firstClass, shot, name, badge, c) {
+  const id = "v" + (viewId++);
+  if (!first || !IMG[first]) {
+    return `<div class="view" style="--c:${c}"><span class="badge" style="--c:${c}">${badge}</span>
+      <img class="shot" src="${IMG[shot]}" alt="${esc(name)}, in the game" loading="lazy"></div>`;
+  }
+  return `<div class="view" style="--c:${c}"><span class="badge" style="--c:${c}">${badge}</span>
+    <img class="${firstClass}" src="${IMG[first]}" alt="${esc(name)}, ${firstLabel === "Model" ? "its model" : "cut out of the world"}" loading="lazy">
+    <img class="shot" src="${IMG[shot]}" alt="${esc(name)}, in the game" loading="lazy" aria-hidden="true">
+    <div class="seg" role="group" aria-label="Picture of ${esc(name)}">
+      <button type="button" id="${id}a" aria-pressed="true">${firstLabel}</button><button type="button" id="${id}b" aria-pressed="false">In the game</button></div></div>`;
+}
+document.addEventListener("click", ev => {
+  const b = ev.target.closest(".seg button");
+  if (!b) return;
+  const v = b.closest(".view"), imgs = v.querySelectorAll("img"), btns = v.querySelectorAll(".seg button");
+  const i = [...btns].indexOf(b);
+  btns.forEach((x, j) => x.setAttribute("aria-pressed", j === i));
+  imgs.forEach((x, j) => x.setAttribute("aria-hidden", j !== i));
+});
+document.getElementById("biome-plates").innerHTML = BIOMES.map(b => `<article class="plate">
+  ${view(b.cut, "Cut-out", "cut", b.img, b.n, b.kind, b.c)}
+  <div class="body"><h3 data-r>${b.n}</h3><div class="swatches" aria-hidden="true">${b.sw.map(c => `<i style="background:${c}"></i>`).join("")}</div>
+  <p data-r>${esc(b.d)}</p>
+  <div class="facts">${b.life ? `<span data-r>Lives here: ${esc(b.life)}</span>` : ""}${b.built ? `<span data-r>Built here: ${esc(b.built)}</span>` : ""}</div></div></article>`).join("");
+document.getElementById("mob-plates").innerHTML = CREATURES.map(m => `<article class="plate">
+  ${view(m.model, "Model", "model", m.img, m.n, m.role, m.c)}
+  <div class="body"><h3 data-r>${m.n}</h3><div class="where" data-r>${esc(m.where)}</div><p data-r>${esc(m.d)}</p>
+  <div class="facts">${m.facts.map(f => `<span data-r>${esc(f)}</span>`).join("")}</div></div></article>`).join("");
+document.getElementById("structure-plates").innerHTML = STRUCTURES.map(s => `<article class="plate${s.feature ? " feature" : ""}">
+  ${view(s.cut, "Cut-out", "cut", s.img, s.n, "Structure", s.c)}
+  <div class="body"><h3 data-r>${s.n}</h3><div class="where" data-r>${esc(s.where)}</div><p data-r>${esc(s.d)}</p>
+  ${s.extra ? `<div class="extras">${s.extra.map(([k, c]) => `<figure><img src="${IMG[k]}" alt="${esc(c)}" loading="lazy"><figcaption data-r>${esc(c)}</figcaption></figure>`).join("")}</div>` : ""}</div></article>`).join("");
+document.querySelector("#upgrades tbody").innerHTML = UPGRADES.map(([n, c, on, d, mat, con]) =>
+  `<tr><td style="--c:${c}"><i></i><span data-r>${n}</span></td><td data-r>${on}</td><td data-r>${d}</td><td data-r>${mat}</td><td data-r>${con}</td></tr>`).join("");
+document.getElementById("notes-list").innerHTML = NOTES.map(([h, p]) => `<div class="note"><h3 data-r>${h}</h3><p data-r>${p}</p></div>`).join("");
+
+/* ---------- the enchanting table: runes drift up the stage toward the title ---------- */
+function glyphs() {
+  const cv = document.getElementById("glyphs"), ctx = cv.getContext("2d"), stage = document.getElementById("stage");
+  let w = 0, h = 0, dpr = 1;
+  const size = () => { dpr = Math.min(2, devicePixelRatio || 1); w = stage.clientWidth; h = stage.clientHeight; cv.width = w * dpr; cv.height = h * dpr; };
+  size(); addEventListener("resize", size);
+  const ps = [];
+  let shown = true;
+  new IntersectionObserver(es => { shown = es[0].isIntersecting; }).observe(stage);
+  function spawn() {
+    const side = Math.random();
+    ps.push({ x: w * (0.1 + Math.random() * 0.8), y: h * (0.55 + Math.random() * 0.4), vx: (Math.random() - 0.5) * 0.3, vy: -(0.35 + Math.random() * 0.5),
+      a: 0, life: 0, max: 260 + Math.random() * 200, ch: ABC[Math.random() * 26 | 0], s: 10 + Math.random() * 9, side });
+  }
+  function frame() {
+    if (shown) {
+      if (ps.length < 46 && Math.random() < 0.45) spawn();
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, w, h);
+      for (let i = ps.length - 1; i >= 0; i--) {
+        const p = ps[i];
+        p.life++;
+        // drawn up and in toward the top centre, the way runes fly to the table
+        p.vx += ((w / 2 - p.x) / w) * 0.012; p.vy -= 0.002;
+        p.x += p.vx; p.y += p.vy;
+        const f = p.life / p.max;
+        p.a = f < 0.15 ? f / 0.15 : f > 0.7 ? Math.max(0, (1 - f) / 0.3) : 1;
+        if (p.life > p.max || p.y < -20) { ps.splice(i, 1); continue; }
+        ctx.font = `${p.s}px Galactic`;
+        ctx.fillStyle = `rgba(214, 200, 255, ${p.a * 0.85})`;
+        ctx.shadowColor = "rgba(160, 130, 255, 0.9)"; ctx.shadowBlur = 8;
+        ctx.fillText(p.ch, p.x, p.y);
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+  frame();
+}
+
+/* the runes need their font before anything is sealed, or the first frame would show English and jump */
+const start = () => {
+  sealAll(document);
+  if (!reduce) glyphs();
+};
+(document.fonts && document.fonts.load ? document.fonts.load("16px Galactic").catch(() => {}) : Promise.resolve()).then(start);
+</script>
+
+</body>
+</html>
