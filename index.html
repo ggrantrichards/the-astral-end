@@ -186,23 +186,21 @@ footer p { margin: 0; }
 <div class="wrap">
   <header class="hero">
     <div class="top">
-      <div class="eyebrow" data-r>A Minecraft mod · 26.3 · Forge</div>
+      <div class="eyebrow" data-r>A Minecraft mod · 26.3 and 1.21.1 · Forge</div>
       <div class="actions">
         <a class="btn" href="https://modrinth.com/mod/the-astral-end" target="_blank" rel="noopener" data-r>Get it on Modrinth</a>
         <button class="btn ghost" type="button" id="readall">Read it all</button>
       </div>
     </div>
     <h1 data-r>The Astral End</h1>
-    <p class="intro" data-r>The outer End, filled in. Five biomes and three hidden places, eight creatures that live
-      with each other, a 200-block Leviathan skeleton with a Curator inside, and a forge for the gear you
-      bring back. Every cut-out on this page is built from a real world the mod generates in its test runs.</p>
+    <p class="intro" data-r>The End is alive.</p>
     <div class="stage" id="stage">
-      <img src="img/diorama_leviathan.webp" alt="A cut-out of a Leviathan: a 200-block skeleton floating in the void, built over with End City towers">
+      <img src="img/diorama_leviathan.webp" alt="A cut-out of a Leviathan, a giant skeleton in the void with End City towers built on it">
       <canvas id="glyphs" aria-hidden="true"></canvas>
-      <div class="cap" data-r>A Leviathan, cut out of the world</div>
+      <div class="cap" data-r>A Leviathan</div>
     </div>
     <nav class="tally" aria-label="Sections">
-      <a href="#web"><b>17</b><span data-r>threads in the web</span></a>
+      <a href="#web"><b>17</b><span data-r>links between creatures</span></a>
       <a href="#biomes"><b>8</b><span data-r>biomes and places</span></a>
       <a href="#creatures"><b>10</b><span data-r>creatures</span></a>
       <a href="#structures"><b>4</b><span data-r>structures</span></a>
@@ -212,8 +210,7 @@ footer p { margin: 0; }
 
   <section id="web">
     <h2 data-r>The web of life</h2>
-    <p class="lede" data-r>Who hunts whom, who hides from whom, who helps and who plays. Every thread here is in
-      the game and checked by the mod's test runs. Pick a creature to follow its threads.</p>
+    <p class="lede" data-r>How the creatures behave around each other. Click a creature to see its links.</p>
     <div class="controls" id="controls"></div>
     <div class="webgrid">
       <div class="chart"><svg id="chart" viewBox="0 0 1100 700" role="img" aria-label="Map of the relationships between the End's creatures"></svg></div>
@@ -221,44 +218,39 @@ footer p { margin: 0; }
     </div>
     <div class="stormwrap" id="stormwrap">
       <h3 data-r>When a Sunstorm comes</h3>
-      <p data-r>The Gilded Reach's star flares, the sky turns gold and the light burns. Everything alive takes cover.</p>
+      <p data-r>When the Gilded Reach's star flares, its light hurts. The animals take cover.</p>
       <div class="storm" id="storm"></div>
     </div>
   </section>
 
   <section id="biomes">
     <h2 data-r>Biomes</h2>
-    <p class="lede" data-r>A 64-block piece of each, cut out of the world. The Gilded Reach is rare; the Shattered
-      Crags are a variant of the Glimmering Crags; the Hollow Roots and the Crystal Vaults are caves, cut open
-      so you can look in.</p>
+    <p class="lede" data-r>Six biomes and two caves. Each picture is a 64-block section taken from a generated world.</p>
     <div class="plates" id="biome-plates"></div>
   </section>
 
   <section id="creatures">
     <h2 data-r>Creatures</h2>
-    <p class="lede" data-r>Eight creatures, the Hollowback (a Hushback the Leviathan's builders hollowed out),
-      and the Curator, the mini-boss. Each model is drawn from the mod's own model and texture.</p>
+    <p class="lede" data-r>Ten new mobs, including the Curator, a mini-boss.</p>
     <div class="plates" id="mob-plates"></div>
   </section>
 
   <section id="structures">
     <h2 data-r>Structures</h2>
-    <p class="lede" data-r>The Leviathan is the heart of it: its skull, its reliquary, the Curator, and the
-      Constellation Maze on its last tower. The rest are landmarks with something to find.</p>
+    <p class="lede" data-r>The Leviathan is the biggest one. The others are smaller ruins with loot.</p>
     <div class="plates" id="structure-plates"></div>
   </section>
 
   <section id="starforge">
     <h2 data-r>The Starforge</h2>
-    <p class="lede" data-r>The late game. Five upgrades, one per item, none simply better than another: the choice
-      is which goes where. Each shows on the tooltip like an enchantment, leaves a colour accent on the item, and
-      stacks with enchantments.</p>
+    <p class="lede" data-r>Late-game upgrades for diamond and netherite gear. Each item takes one upgrade, and they
+      work alongside enchantments.</p>
     <div class="forge">
       <ol class="steps">
-        <li><b data-r>Defeat the Curator</b><span data-r>Starforge Templates drop only from it, two a kill: one to use, one to copy.</span></li>
-        <li><b data-r>Sight the constellation</b><span data-r>Each upgrade answers to a constellation. Find it through a spyglass from the Gilded Reach.</span></li>
+        <li><b data-r>Defeat the Curator</b><span data-r>It drops two Starforge Templates. They don't come from anywhere else.</span></li>
+        <li><b data-r>Find the constellation</b><span data-r>Each upgrade has a constellation. Look at it through a spyglass while standing in the Gilded Reach.</span></li>
         <li><b data-r>Build an Astral Forge</b><span data-r>A Meteoric Iron block, five Observatory Quartz and a Void Crystal.</span></li>
-        <li><b data-r>Forge</b><span data-r>Template, item, Starforge Alloy and the upgrade's material. Diamond and netherite gear, bows, crossbows, tridents and maces.</span></li>
+        <li><b data-r>Forge it</b><span data-r>Put in the template, the item, Starforge Alloy and the upgrade's material. Works on diamond and netherite gear, bows, crossbows, tridents and maces.</span></li>
       </ol>
       <div class="shots2">
         <img src="img/starforge_astral_forge.jpg" alt="The Astral Forge, in the game" loading="lazy">
@@ -277,13 +269,13 @@ footer p { margin: 0; }
 
   <section id="notes">
     <h2 data-r>Field notes</h2>
-    <p class="lede" data-r>Things worth knowing before you go out.</p>
+    <p class="lede" data-r>Tips.</p>
     <div class="notes" id="notes-list"></div>
   </section>
 
   <footer>
-    <p data-r>The Astral End for Minecraft 26.3 on Forge 66, on the client and the server. MIT licensed.</p>
-    <p><span data-r>Cut-outs and models are drawn by the mod's tools from its test worlds; the other pictures are screenshots taken in a real game.</span>
+    <p data-r>For Minecraft 26.3 (Forge 66) and 1.21.1 (Forge 52.1). Install it on the client and the server. MIT licensed.</p>
+    <p><span data-r>The cut-outs and models are rendered from test worlds. The rest are in-game screenshots.</span>
       <a href="https://modrinth.com/mod/the-astral-end" target="_blank" rel="noopener">modrinth.com/mod/the-astral-end</a></p>
   </footer>
 </div>
@@ -307,141 +299,141 @@ const REGIONS = [
 // The web: the eight creatures, the Hollowback and the Curator, and the vanilla mobs they meet.
 const MOBS = {
   hushback:  { n: "Hushback", face: "f_hushback", x: 150, y: 150, home: "The Gilded Reach",
-    self: ["The herd blinks away together when one is hurt.", "One stands lookout, head up; at trouble it chimes twice and the herd shies off. Sneak up, or bring Breathcomb."] },
+    self: ["The herd blinks away together when one is hurt.", "One keeps watch and chimes when something comes. Sneak, or hold Breathcomb."] },
   hydragrip: { n: "Hydragrip", face: "f_hydragrip", x: 320, y: 115, home: "The Gilded Reach",
     self: ["The young play tag round the ponds."] },
   endermite: { n: "Endermite", face: "f_endermite", x: 330, y: 265, home: "Vanilla", vanilla: true, self: [] },
   axolotl:   { n: "Axolotl", face: "f_axolotl", x: 120, y: 285, home: "Vanilla, if you bring one", vanilla: true, self: [] },
   whale:     { n: "Drift Whale", face: "f_whale", x: 590, y: 115, home: "The open void, in pods",
-    self: ["Pods follow a leader, hum and answer, roll, breach and chase in spirals.",
-           "The pod swims as one flock, each turning as the leader turned, a beat late.",
-           "A straying calf is called and nudged back by its mother.",
-           "The pod sleeps hanging nose-up in the void, slowly turning.",
-           "Passing a Leviathan, the pod circles it once, humming its lowest."] },
+    self: ["Pods follow a leader and hum to each other.",
+           "The pod turns when the leader turns.",
+           "A mother brings a wandering calf back.",
+           "The pod sleeps nose-up in the void.",
+           "A pod circles a Leviathan once when it passes one."] },
   wretch:    { n: "Mirror Wretch", face: "f_wretch", x: 470, y: 400, home: "Ashen Barrens",
-    self: ["Throws familiar sounds from the island's edge to lure you over."] },
+    self: ["Makes familiar sounds near island edges to lure you over."] },
   enderman:  { n: "Enderman", face: "f_enderman", x: 655, y: 345, home: "Vanilla", vanilla: true,
     self: ["Won't stay in the Gilded Reach.", "In the Ashen Barrens, stands at the edges facing the void."] },
   watcher:   { n: "Watcher", face: "f_watcher", x: 770, y: 440, home: "Ashen Barrens", self: ["Leads players toward the nearest Leviathan."] },
-  hollowback:{ n: "Hollowback", face: "f_hollowback", x: 470, y: 565, home: "Inside a Leviathan", self: ["Looks like the herd until it's on you; then its head splits open on its fangs."] },
-  curator:   { n: "Curator", face: "f_curator", x: 605, y: 605, home: "Inside a Leviathan", self: ["At half health it turns the reliquary over: the fight goes on upside down."] },
+  hollowback:{ n: "Hollowback", face: "f_hollowback", x: 470, y: 565, home: "Inside a Leviathan", self: ["Looks like a Hushback until it gets close. Then its head opens into a jaw of fangs."] },
+  curator:   { n: "Curator", face: "f_curator", x: 605, y: 605, home: "Inside a Leviathan", self: ["At half health it flips the room, and the fight continues upside down."] },
   shulker:   { n: "Shulker", face: "f_shulker", x: 740, y: 580, home: "Vanilla, on the Leviathan's towers", vanilla: true, self: [] },
-  pollinator:{ n: "Pollinator", face: "f_pollinator", x: 850, y: 130, home: "Nebula Fields", self: ["Pollinates glowing plants, which spread."] },
+  pollinator:{ n: "Pollinator", face: "f_pollinator", x: 850, y: 130, home: "Nebula Fields", self: ["Spreads the glowing plants."] },
   shardback: { n: "Shardback", face: "f_shardback", x: 1010, y: 420, home: "Crystal Vaults",
-    self: ["Waits folded down in its geode, one more crystal cluster, until you come close."] },
+    self: ["Hides among the crystals in its geode until you get close."] },
   stalker:   { n: "Umbral Stalker", face: "f_stalker", x: 890, y: 510, home: "Crags' root caves, Deep Hollows", self: ["Snuffs out lights; fears fire."] },
   wolf:      { n: "Wolf", face: "f_wolf", x: 1020, y: 615, home: "Vanilla, if you bring one", vanilla: true, self: [] },
 };
 // [from, to, type, what, why it matters]
 const EDGES = [
-  ["hydragrip", "endermite", "hunts", "Hunts endermites", "Each one it eats, it coughs up an Ender Pearl."],
-  ["endermite", "hushback", "hunts", "Pesters the herds", "In the Gilded Reach endermites creep after the Hushbacks, and the herd hops and shifts."],
-  ["hydragrip", "hushback", "symbiosis", "Cleans the herd, rides along", "An endermite near the herd is the first it goes for; then it lounges on a resting Hushback's back."],
-  ["hydragrip", "axolotl", "play", "Plays tag with axolotls", "Bring one to a pond: one chases, touch, and the other is it."],
-  ["hollowback", "hushback", "kin", "Remembers its kin", "Hold Breathcomb or Hushfleece and a Hollowback falters, head low, and chimes once like the herd."],
-  ["enderman", "wretch", "senses", "Listens to the Wretch", "At the Ashen Barrens' edges, Endermen turn to face a nearby Wretch."],
-  ["wretch", "endermite", "hunts", "Eats endermites", "They live in the Ashen Barrens now too."],
-  ["wretch", "whale", "senses", "Mimics whale hums", "The pod answers, then falls silent and steers away. Silent whales mean a Wretch is near."],
-  ["enderman", "watcher", "avoids", "Won't meet the Watcher's eye", "An Enderman near it turns its back and walks off."],
-  ["pollinator", "whale", "symbiosis", "Drifts in the pods' wake", "Pollinators rise behind a passing pod's tails, glowing, then sink back to their plants."],
-  ["whale", "pollinator", "play", "Calves chase Pollinators", "Round and round one, never touching, till the calf's mother comes and nudges it home."],
-  ["stalker", "enderman", "hunts", "Hunts Endermen", "When no player is about: short fights in the dark, the Endermen often blinking away."],
-  ["stalker", "pollinator", "avoids", "Avoids glowing swarms", "Light in any form keeps it back."],
-  ["stalker", "shardback", "avoids", "Keeps clear of a woken Shardback", "Two hunters, one dark: it backs off from one that has unfolded."],
-  ["wolf", "stalker", "senses", "Gives the Stalker away", "Bring a wolf: it stares and growls where the Stalker hides, and the Stalker shows itself."],
-  ["shardback", "enderman", "hunts", "Ambushes Endermen", "An Enderman that blinks into a vault and wanders within six blocks gets the same welcome you would."],
-  ["curator", "shulker", "kin", "Shares the Leviathan", "Shulkers keep the towers; the Curator keeps the reliquary."],
+  ["hydragrip", "endermite", "hunts", "Hunts endermites", "It drops an Ender Pearl for each one."],
+  ["endermite", "hushback", "hunts", "Pesters the herds", "Endermites follow the herds around the Gilded Reach."],
+  ["hydragrip", "hushback", "symbiosis", "Protects the herd, rides on it", "It goes after endermites near the herd and sits on resting Hushbacks."],
+  ["hydragrip", "axolotl", "play", "Plays tag with axolotls", "Bring an axolotl to a pond and they chase each other."],
+  ["hollowback", "hushback", "kin", "Remembers its kin", "Hold Breathcomb or Hushfleece and a Hollowback hesitates."],
+  ["enderman", "wretch", "senses", "Listens to the Wretch", "Endermen at the Ashen Barrens' edges turn toward a nearby Wretch."],
+  ["wretch", "endermite", "hunts", "Eats endermites", "Endermites live in the Ashen Barrens too."],
+  ["wretch", "whale", "senses", "Mimics whale hums", "The pod answers, then goes quiet and swims off. Quiet whales mean a Wretch is nearby."],
+  ["enderman", "watcher", "avoids", "Won't meet the Watcher's eye", "Endermen near it turn away and leave."],
+  ["pollinator", "whale", "symbiosis", "Drifts in the pods' wake", "Pollinators follow a passing pod for a while, then go back to their plants."],
+  ["whale", "pollinator", "play", "Calves chase Pollinators", "A calf chases one in circles until its mother brings it back."],
+  ["stalker", "enderman", "hunts", "Hunts Endermen", "It attacks Endermen when no player is around. They usually teleport away."],
+  ["stalker", "pollinator", "avoids", "Avoids glowing swarms", "Light keeps it away."],
+  ["stalker", "shardback", "avoids", "Keeps clear of a woken Shardback", "It backs off from a Shardback that has woken up."],
+  ["wolf", "stalker", "senses", "Gives the Stalker away", "A wolf growls at a hidden Stalker, which makes it show itself."],
+  ["shardback", "enderman", "hunts", "Ambushes Endermen", "It attacks Endermen that come within six blocks, the same as it would you."],
+  ["curator", "shulker", "kin", "Shares the Leviathan", "Shulkers guard the towers. The Curator guards the reliquary."],
 ];
 const STORM = [
-  ["f_hushback", "Hushbacks crowd under the giant Lumineshrooms"],
-  ["f_hydragrip", "Hydragrips slip into the ponds"],
-  ["f_whale", "Drift Whale pods swim out of the Reach till it's past"],
+  ["f_hushback", "Hushbacks shelter under the giant Lumineshrooms"],
+  ["f_hydragrip", "Hydragrips get into the ponds"],
+  ["f_whale", "Drift Whale pods leave the Reach until it ends"],
 ];
 const BIOMES = [
   { n: "The Gilded Reach", kind: "Rare biome", cut: "diorama_biome_gilded_reach", img: "gilded_reach_aerial", c: "#f3d98a", sw: ["#c9aa48", "#34c8bc", "#5a8a3a", "#e8913a", "#c49cff"],
-    d: "One great disc of golden meadow: gold turf and grass, teal water in the Wellspring and its ponds, rocky knolls, giant Lumineshrooms, and a faint gold and teal aurora low round its sky. Its star brings the Sunstorms; take cover under a cap.",
+    d: "A large disc of golden grassland with ponds, a spring in the middle and giant Lumineshrooms. The star above it causes Sunstorms. Shelter under a Lumineshroom when one comes.",
     life: "Hushbacks, Hydragrips", built: "The Solar Array" },
   { n: "Nebula Fields", kind: "Biome", cut: "diorama_biome_nebula_fields", img: "nebula_fields_aerial", c: "#ff8fb8", sw: ["#c0506e", "#8a2c6a", "#b0d8ff", "#3a1230"],
-    d: "An emission nebula on the ground: rose moss, magenta reed groves with cold-blue tips, Drift Bladders tethered over the moss, and glowing gas clouds overhead. Low gravity.",
+    d: "Pink moss, tall magenta reeds and floating Drift Bladders, with glowing gas clouds in the sky. Gravity is lower here.",
     life: "Pollinators", built: "Shattered Observatory" },
   { n: "Ashen Barrens", kind: "Biome", cut: "diorama_biome_ashen_barrens", img: "ashen_barrens", c: "#bdb6c4", sw: ["#e6e0d2", "#a8a296", "#635f58", "#e0820f"],
-    d: "The Leviathans' graveyard: pale stone shelves under falling ash, ribcages and bone spires, withered giant stalks, and Solarite glowing at the bottom of scorch fissures ringed with Sunscorched Stone.",
+    d: "Flat pale stone covered in falling ash, with old Leviathan bones lying around. Solarite ore glows at the bottom of burnt cracks.",
     life: "Mirror Wretch, Watcher, Drift Whales, Endermen at the edges", built: "The Leviathan, Comet Craters" },
   { n: "Deep Hollows", kind: "Biome", cut: "diorama_biome_deep_hollows", img: "deep_hollows", c: "#b48cff", sw: ["#241a3c", "#6a54b0", "#160f2a", "#c49cff"],
-    d: "A dark forest of fireproof Nullwood on ring islands, Hollow Vines hanging to the ground, Null Lanterns in pools of light, Mimic Plants, and Upwells that turn gravity over.",
+    d: "A dark forest of Nullwood trees on ring-shaped islands, with hanging Hollow Vines and Null Lanterns. Upwells here flip gravity.",
     life: "Umbral Stalker", built: "" },
   { n: "Glimmering Crags", kind: "Biome", cut: "diorama_biome_glimmering_crags", img: "glimmering_crags", c: "#d8d0ff", sw: ["#2c3448", "#e0d0ff", "#7c7290", "#160f2a"],
-    d: "Peaks of dark Nightstone grown through with cold white-lavender Glimmer Crystal, and root caves inside the bigger islands where Void Crystal grows.",
+    d: "Dark Nightstone peaks with Glimmer Crystal growing out of them. The bigger islands have caves with Void Crystal.",
     life: "Umbral Stalker (in the caves)", built: "" },
   { n: "Shattered Crags", kind: "Variant", cut: "diorama_biome_shattered_crags", img: "shattered_crags", c: "#7fb2ff", sw: ["#283044", "#e0d0ff", "#7fb2ff"],
-    d: "The Crags split into floating shards, starlight falling between them and on into the void.",
+    d: "A version of the Glimmering Crags broken into small floating pieces.",
     life: "", built: "" },
   { n: "Hollow Roots", kind: "Cave", cut: null, img: "biome_hollow_roots", c: "#b48cff", sw: ["#2a1c3a", "#c49cff", "#f3d98a"],
-    d: "The caves under the Deep Hollows: Nullwood roots, glowcaps and Starsap, lit by drifting motes.",
+    d: "Caves under the Deep Hollows, full of roots, glowing mushrooms and Starsap ore.",
     life: "", built: "" },
   { n: "Crystal Vaults", kind: "Cave", cut: "diorama_cave_crystal_vaults", img: "biome_crystal_vaults", c: "#7fb2ff", sw: ["#2e2a44", "#e0d0ff", "#7a44e0"],
-    d: "Under the Shattered Crags, great geodes of Glimmer Crystal drift in the void, each split open somewhere.",
+    d: "Big geodes of Glimmer Crystal floating under the Shattered Crags.",
     life: "Shardback", built: "" },
 ];
 const CREATURES = [
   { n: "Drift Whale", model: "model_drift_whale", img: "mob_drift_whale_side", role: "Passive", c: "#4fd6c2", where: "The open void, in pods",
-    d: "A huge translucent whale, last small descendant of the Leviathans. Pods hum to each other and play; sing to one (Memory Moss, a note block, Chorus Fruit) and it's yours to ride.",
+    d: "A large see-through whale that travels in pods. Tame one with Memory Moss, a note block and Chorus Fruit, and you can ride it.",
     facts: ["Rideable", "Whalelight Scales"] },
   { n: "Pollinator", model: "model_pollinator", img: "mob_pollinator", role: "Passive", c: "#4fd6c2", where: "Nebula Fields",
-    d: "A small jellyfish of glowing gas that drifts between glowing plants and spreads them. Now and then it leaves Glowing Spores behind; there's no reason to kill it.",
+    d: "A small glowing jellyfish that spreads the Nebula Fields' plants. It sometimes drops Glowing Spores.",
     facts: ["Glowing Spores", "Spreads plants"] },
   { n: "Hushback", model: "model_hushback", img: "mob_hushback", role: "Passive", c: "#4fd6c2", where: "The Gilded Reach",
-    d: "A herd grazer so pale its bones show through. Hurt one and the whole herd blinks away. Shear it for Hushfleece, which makes Sunshades.",
+    d: "A dark grazing animal with a see-through hide. If you hurt one, the whole herd teleports away. Shear it for Hushfleece, used to make Sunshades.",
     facts: ["Hushfleece", "Hushback Flank", "Breathcomb breeds"] },
   { n: "Hydragrip", model: "model_hydragrip", img: "mob_hydragrip_angled", role: "Neutral", c: "#f2c14e", where: "The Gilded Reach's ponds",
-    d: "A dark newt lit with cyan spots. Its broods grow up in the water; adults hunt endermites on the banks and cough up an Ender Pearl for each one.",
+    d: "A dark newt with glowing cyan spots that lives by the ponds. It hunts endermites and drops an Ender Pearl for each one.",
     facts: ["Ender Pearls", "Chorus Fruit tempts"] },
   { n: "Mirror Wretch", model: "model_mirror_wretch", img: "mob_mirror_wretch_angled", role: "Hostile", c: "#ff7a59", where: "Ashen Barrens",
-    d: "A faceless grey worm with a round mouth of teeth and a vocal sac for every voice it has stolen. It throws sounds you know from the island's edge, and lunges when you're there.",
+    d: "A grey worm with a round mouth full of teeth. It copies familiar sounds near island edges and attacks when you get close.",
     facts: ["Memory Moss calms it", "Drops Memory Moss"] },
   { n: "Umbral Stalker", model: "model_umbral_stalker", img: "mob_umbral_stalker_lit", role: "Hostile", c: "#ff7a59", where: "Crags' root caves, Deep Hollows",
-    d: "A hunched brute, invisible in the dark until it hunts. It creeps up from behind, snuffs out your lights, and fears fire.",
+    d: "A large creature that is invisible in the dark until it attacks. It puts out your lights and is afraid of fire.",
     facts: ["Its membrane brews Invisibility", "Afraid of fire"] },
   { n: "Watcher", model: "model_watcher", img: "mob_watcher", role: "Neutral", c: "#f2c14e", where: "Ashen Barrens, Shattered Observatory",
-    d: "A floating stone sentinel with one great eye, seen only at the edge of sight. Look straight at it and it vanishes, turning up further on, on the way to the nearest Leviathan.",
+    d: "A floating stone figure with one eye. Look straight at it and it teleports a bit further away, toward the nearest Leviathan.",
     facts: ["Leads to the Leviathan", "Can't be harmed"] },
   { n: "Shardback", model: "model_shardback", img: "mob_shardback_angled", role: "Hostile", c: "#ff7a59", where: "Crystal Vaults",
-    d: "A low, heavy hunter whose back is grown over with Glimmer Crystal. It waits folded down in a geode, one more cluster among the rest, and unfolds and leaps when you come within a few steps.",
+    d: "A heavy creature with crystals on its back. It hides in a geode looking like a crystal cluster, and jumps out when you get close.",
     facts: ["Void Crystal", "Glimmer Clusters"] },
   { n: "Hollowback", model: "model_hollowback", img: "mob_hollowback", role: "Variant", c: "#b48cff", where: "The Leviathan's lower ribs",
-    d: "A Hushback the builders kept and hollowed out. It looks like one of the herd, calm and slow, with grey fleece and duller eyes, until it's on you: then its head splits open into a jaw full of fangs, a violet glow down its throat, and every bite snaps it shut.",
+    d: "It looks like a grey Hushback and moves slowly. When it gets close, its head opens into a jaw full of fangs.",
     facts: ["Hostile", "Opens up when it's close", "Falters at Breathcomb"] },
   { n: "The Curator", model: "model_curator", img: "mob_curator_exposed", role: "Mini-boss", c: "#f3d98a", where: "The Leviathan's reliquary",
-    d: "A hulking war-construct with its core in a glass case. It telegraphs a cannon beam and a shoulder charge; at half health the case shatters and the whole fight turns upside down. Its Starforge Templates are the only ones in the End.",
+    d: "A large robot with its core in a glass case. It fires a beam and charges at you. At half health the glass breaks and the fight flips upside down. It drops the Starforge Templates.",
     facts: ["300 health", "Starforge Templates", "Curator's Core"] },
 ];
 const STRUCTURES = [
   { n: "The Leviathan", feature: true, cut: "diorama_leviathan", img: "structure_leviathan_skull", where: "Ashen Barrens and the outer End", c: "#c49cff",
     extra: [["structure_leviathan", "From afar"], ["structure_leviathan_reliquary", "The reliquary"], ["structure_leviathan_heart", "The heart"], ["structure_leviathan_maze", "The Constellation Maze"]],
-    d: "A 200-block skeleton floating in the void, built over by the End's builders: a skull you can enter (the Maw, a wormhole), a reliquary in its ribcage where the Curator waits, a beating heart, towers with loot and shulkers, and a Constellation Maze on its last tower." },
+    d: "A skeleton about 370 blocks long with End City towers built on it. Inside: the Curator's room in the ribcage, a beating heart, loot towers with shulkers, a Constellation Maze, and a skull that works as a portal." },
   { n: "Solar Array", cut: "diorama_solar_array", img: "structure_solar_array", where: "The Gilded Reach", c: "#f3d98a",
-    d: "Cracked Solarite mirrors on a low terrace round a reflecting pool, over a chamber where a Bottled Flare still sits in its pedestal. The mirrors still focus the Sunstorms on its field." },
+    d: "Broken Solarite mirrors around a pool, with a room underneath that holds a Bottled Flare." },
   { n: "Shattered Observatory", cut: "diorama_shattered_observatory", img: "structure_shattered_observatory", where: "Nebula Fields, End Highlands", c: "#ff8fb8",
-    d: "The Cartographers' domed hall in a great ring of quartz pillars, most of them fallen, grown over with Starblooms. A Watcher keeps to its ruins." },
+    d: "A ruined domed building inside a ring of fallen quartz pillars. A Watcher is often nearby." },
   { n: "Comet Crater", cut: "diorama_comet_crater", img: "structure_comet_crater_hot", where: "Ashen Barrens", c: "#e0820f",
-    d: "A bowl blasted into an island, ringed with charred stone, a Comet Core of Meteoric Iron at the bottom and a cache under it. Some are still hot." },
+    d: "A crater with burnt stone, Meteoric Iron in the middle and a chest buried under it. Some are still hot." },
 ];
 const UPGRADES = [
-  ["Void Recall", "#a98cff", "Chestplate", "Right-click a <b>Rift Pearl</b> onto it. Fall into the void and the pearl is spent to put you back on your last footing.", "Curator's Core (the Curator)", "Leviathan"],
-  ["Rift Walker", "#7ad8ff", "Boots", "Walk off an edge and tiles of rift form under your feet and a step ahead, cracking and crumbling a moment later.", "Whalelight Scale (a tamed Drift Whale sheds them)", "Whale"],
-  ["Lensing", "#ee62d4", "Helmet, leggings", "A chance per piece that a projectile bends around you.", "Cracked Lens (the builders' chests)", "Watcher"],
-  ["Radiant", "#fff07a", "Armour, weapons", "Armour: <b>Soak Light</b>, a golden heart now and then in bright light. Weapons: whatever you hit <b>glows</b>.", "Bottled Flare (the Solar Array's pedestal)", "Dead Star"],
-  ["Echo Strike", "#eea650", "Melee weapons", "Part of every melee hit lands again a moment later, with a chime.", "Rift Pearl (bosses and the best chests)", "Maw"],
+  ["Void Recall", "#a98cff", "Chestplate", "Add a <b>Rift Pearl</b> to it. If you fall into the void, the pearl is used up and you're put back where you last stood.", "Curator's Core (the Curator)", "Leviathan"],
+  ["Rift Walker", "#7ad8ff", "Boots", "Walking off an edge makes temporary blocks appear under your feet.", "Whalelight Scale (dropped by tamed Drift Whales)", "Whale"],
+  ["Lensing", "#ee62d4", "Helmet, leggings", "Each piece gives a chance for projectiles to miss you.", "Cracked Lens (structure chests)", "Watcher"],
+  ["Radiant", "#fff07a", "Armour, weapons", "On armour, you sometimes get an extra golden heart in bright light. On weapons, whatever you hit glows.", "Bottled Flare (the Solar Array's pedestal)", "Dead Star"],
+  ["Echo Strike", "#eea650", "Melee weapons", "Melee hits do a bit of extra damage a moment later.", "Rift Pearl (rare chests)", "Maw"],
 ];
 const NOTES = [
-  ["Sunstorms", "In the Gilded Reach the star flares and the light burns. Get under a Lumineshroom, wear a Sunshade (Hushfleece), or drink Sun Ward (Sunscale Lichen)."],
-  ["Upwells", "In the Deep Hollows an Upwell turns gravity over: you fall up onto the underside of the island. A Potion of Upwelling does it anywhere."],
-  ["Riding a whale", "Eat Memory Moss and play a note block near a Drift Whale, then feed it Chorus Fruit. Only its owner can ride it."],
-  ["The Lodestar", "The End's own respawn point. Use one in the End, and if you die there you wake beside it."],
-  ["Memory Moss", "Grows in the Ashen Barrens and replays pale afterimages of what passed over it. Eating it lets you remember."],
-  ["Star Charts", "Pieced together from Chart Fragments in the builders' chests; each marks a far-off region or a site."],
-  ["The Maw", "The Leviathan's skull is a wormhole. Walk into its mouth and it carries you across the End."],
-  ["Brewing", "An Umbral Membrane brews an Awkward Potion straight into Invisibility."],
+  ["Sunstorms", "In the Gilded Reach the star sometimes flares and its light hurts. Hide under a Lumineshroom, wear a Sunshade, or drink a Sun Ward potion."],
+  ["Upwells", "Upwells in the Deep Hollows flip gravity, so you fall up to the bottom of the island. A Potion of Upwelling does the same anywhere."],
+  ["Riding a whale", "Eat Memory Moss, play a note block near a Drift Whale, then feed it Chorus Fruit. Only the owner can ride it."],
+  ["The Lodestar", "A respawn point for the End. Use it, and if you die in the End you respawn next to it."],
+  ["Memory Moss", "Grows in the Ashen Barrens and shows faint images of mobs that walked over it. You can eat it."],
+  ["Star Charts", "Made from Chart Fragments found in chests. Each one points to a biome or structure."],
+  ["The Maw", "Once woken, the Leviathan's skull is a portal to every other Leviathan you've woken."],
+  ["Brewing", "Add an Umbral Membrane to an Awkward Potion to make Invisibility."],
 ];
 
 /* ---------- runes ---------- */
@@ -566,9 +558,8 @@ function render() {
   }
   const panel = document.getElementById("panel");
   if (!selected) {
-    panel.innerHTML = `<h3 data-r>${EDGES.length} threads</h3>
-      <p class="hint" data-r>Each is a behaviour the mod's test runs make happen and check.</p>
-      <p class="hint" data-r>Pick a creature to see who it hunts, fears, helps and plays with, and what it does with its own kind.</p>`;
+    panel.innerHTML = `<h3 data-r>${EDGES.length} links</h3>
+      <p class="hint" data-r>Click a creature to see what it hunts, avoids, helps and plays with.</p>`;
   } else {
     const m = MOBS[selected];
     const li = EDGES.filter(e => visible(e) && (e[0] === selected || e[1] === selected)).map(e => {
